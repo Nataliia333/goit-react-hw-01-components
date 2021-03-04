@@ -7,8 +7,8 @@ const Statistics = ({ title, stats }) => {
       <h2 className="title">{title}</h2>
 
       <ul className="stat-list">
-        {stats.map(({ label, percentage }) => (
-          <li className="item">
+        {stats.map(({ id, label, percentage }) => (
+          <li key={id} className="item">
             <span className="label">{label}</span>
             <span className="percentage">{percentage}%</span>
           </li>
@@ -26,6 +26,7 @@ Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
     }),
