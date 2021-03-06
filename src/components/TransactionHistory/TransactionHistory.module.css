@@ -1,0 +1,26 @@
+.transaction__history {
+  /* padding-left: 70px;
+  padding-right: 70px; */
+  margin: 50px;
+  /* padding: 40px; */
+  width: 550px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+thead tr {
+  height: 40px;
+  background-color: rgb(35, 234, 248);
+  color: white;
+}
+
+tbody tr {
+  height: 40px;
+  text-align: center;
+  color: gray;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: rgb(235, 227, 227);
+}

@@ -1,5 +1,5 @@
 .statistics {
-  width: 250px;
+  width: 350px;
   margin: 50px;
   background-color: #fff;
   border-radius: 5px;
@@ -33,9 +33,9 @@
 }
 
 .label {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .percentage {
-  font-size: 15px;
+  font-size: 20px;
 }
