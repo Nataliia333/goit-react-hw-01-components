@@ -3,6 +3,7 @@ import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import Container from './components/Container/Container';
 
 import user from './components/Profile/user.json';
 import statisticalData from './components/Statistics/statistical-data.json';
@@ -11,7 +12,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -25,7 +26,7 @@ const App = () => {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 };
 
